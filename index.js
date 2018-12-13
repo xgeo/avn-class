@@ -11,4 +11,11 @@ const xablau = new App();
     }
 })();
 
+
 // xablau.writeFile().then().catch();
+xablau.readFile("teste.txt")
+.then(
+    response => {
+        console.log(response);
+    }
+).catch(error => console.log(error));
